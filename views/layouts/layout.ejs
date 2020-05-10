@@ -6,10 +6,9 @@
     <title>Mybrary</title>
 </head>
 <body>
-    Before <!--Content that comes before the dynamically loaded content-->
-    <br>
+    <%- include('../partials/header.ejs') %>  <!--Includes the header before the dynamically loaded content--> 
+    <%- include('../partials/errorMessage.ejs') %> <!--Displays the error message. This confuses me as it seems that the error message would be loaded every time, error or not, with this approach-->
     <%- body %> <!--The dynamically loaded content-->
     <br>
-    After <!--Content that comes after the dynamically loaded content-->
 </body>
 </html>
